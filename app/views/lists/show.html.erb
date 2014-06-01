@@ -1,0 +1,7 @@
+<h2><%= @list.name %></h2>
+
+
+<%= form_for @todo do |form| %>
+	<%= form.text_field :description, placeholder: 'What todo?' %>
+	<%= form.submit 'Todo!' %>
+<% end %>
